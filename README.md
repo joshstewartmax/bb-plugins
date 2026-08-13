@@ -11,6 +11,10 @@ Personal [bb](https://github.com/get-bb/bb) plugins, one per directory.
 - **bb-plugin-open-terminal** — adds an "Open terminal" button to the thread
   composer that opens a terminal in the thread's project and worktree, shown
   as a tab in the thread's right panel.
+- **bb-plugin-path-mention** — adds a "Filepath" `@`-mention provider that
+  completes any file or folder by unix path relative to the thread's worktree
+  (`../`, absolute, or `~`) — e.g. `@../abc/` tags a sibling repo — and injects
+  its content as agent context.
 
 ## Installing
 
