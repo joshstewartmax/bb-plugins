@@ -5,6 +5,12 @@ terminal session scoped to the open thread, so it starts in the project and
 worktree that thread is based on; the bb client surfaces it as a tab in the
 thread's right panel.
 
+Also ships a content script that makes text selection usable in bb's terminal
+panel: it forces xterm's DOM renderer (bb's bundled WebGL renderer never
+paints the selection highlight), recolors the selection so it is visible
+against the terminal background, and makes Ctrl+C copy the selection when one
+exists (falling through to SIGINT when there is none).
+
 ## UI components
 
 `components/ui/` is vendored source you own (the shadcn model): edit the
