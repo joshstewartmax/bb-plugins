@@ -1,0 +1,26 @@
+{
+  "name": "bb-plugin-claude-skills",
+  "version": "0.1.0",
+  "type": "module",
+  "engines": {
+    "bb": ">=0.37",
+    "bbPluginSdk": "^0.4.1"
+  },
+  "bb": {
+    "name": "Claude Code Parity",
+    "description": "Surfaces Claude Code's built-in slash commands (/simplify, /code-review, /run, …) in bb's skill menu, so bb's / menu matches the Claude Code terminal.",
+    "branding": {
+      "icon": "Zap"
+    },
+    "server": "./server.ts"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.12",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "better-sqlite3": "^12.0.0",
+    "hono": "^4.11.9",
+    "typescript": "^5.7.0",
+    "zod": "^4.3.6"
+  }
+}
